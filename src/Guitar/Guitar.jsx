@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { GuitarBody } from "./components/GuitarBody";
+import { Fretboard } from "../Fretboard/Fretboard";
 
 export const Guitar = () => {
 
@@ -8,6 +9,7 @@ export const Guitar = () => {
     return(
         <div className="guitar">
             <GuitarBody currFrets={currFrets} />
+            <Fretboard />
         </div>
     )
 }
